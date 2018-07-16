@@ -1,0 +1,272 @@
+@font-face {
+  font-family: "listt";
+  src: url("../fonts/listt.eot");
+  src: url("../fonts/listt.eot?#iefix") format("embedded-opentype"), url("../fonts/listt.woff") format("woff"), url("../fonts/listt.ttf") format("truetype"), url("../fonts/listt.svg#listt") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[data-icon]:before {
+  font-family: "listt" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "listt" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-caret-left:before {
+  content: "\68"; }
+
+.icon-caret-right:before {
+  content: "\69"; }
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box; }
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.75rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+  margin: 20px 0 70px;
+  font-weight: 900; }
+
+h2 {
+  font-size: 1.125rem;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  line-height: 1.5em;
+  margin: 0; }
+
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 0.25em;
+  margin: 0;
+  line-height: 1; }
+
+.btn.btn-primary {
+  background-color: #F8F179;
+  color: black;
+  font-size: 0.875rem;
+  letter-spacing: 0.25em;
+  line-height: 1;
+  padding: 10px 12px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  text-transform: uppercase;
+  margin-top: 20px; }
+  .btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {
+    background-color: #fbf6a9; }
+  .btn.btn-primary:active, .btn.btn-primary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(252, 241, 108, 0.75); }
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #fbf6a9;
+  color: black; }
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(252, 241, 108, 0.75); }
+
+.v-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+body {
+  background: #e1e3e3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e1e3e3 20%, white 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e1e3e3 20%, white 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e1e3e3 20%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3e3', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  position: relative;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden; }
+
+.yellow-box {
+  width: 150%;
+  height: 70%;
+  transform: translateX(-50%) rotate(-10deg);
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  background: #F8F179;
+  z-index: 0; }
+
+#wrap {
+  background: transparent;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2; }
+  #wrap .top-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 70px;
+    position: absolute;
+    top: 0; }
+    #wrap .top-text h1 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 225px;
+      position: relative; }
+      #wrap .top-text h1:after {
+        content: '';
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0px;
+        background: -moz-linear-gradient(left, rgba(248, 241, 121, 0) 0%, #f8f179 80%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(248, 241, 121, 0) 0%, #f8f179 80%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(248, 241, 121, 0) 0%, #f8f179 80%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f8f179', endColorstr='#f8f179',GradientType=1 );
+        /* IE6-9 */ }
+  #wrap .main-box {
+    background-color: white;
+    max-width: 350px;
+    min-height: 420px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    box-shadow: 0 13px 18px 0px rgba(0, 0, 0, 0.1); }
+    #wrap .main-box .list-container {
+      position: absolute;
+      display: block;
+      align-items: center;
+      left: 25px;
+      height: 175px;
+      width: 55px;
+      top: 110px;
+      z-index: 10; }
+      #wrap .main-box .list-container .list-sort {
+        text-align: center;
+        height: 175px;
+        width: 100%; }
+        #wrap .main-box .list-container .list-sort ul.list {
+          position: absolute;
+          height: 175px;
+          overflow: hidden;
+          width: 30px;
+          padding: 0;
+          left: 0;
+          margin: 0; }
+          #wrap .main-box .list-container .list-sort ul.list li {
+            position: absolute;
+            display: block;
+            height: 30px;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            color: rgba(0, 0, 0, 0);
+            letter-spacing: 0.05em;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.25rem; }
+    #wrap .main-box .keys {
+      position: absolute;
+      bottom: 30px;
+      width: 75px;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%; }
+    #wrap .main-box .arrow-left-box,
+    #wrap .main-box .arrow-right-box {
+      color: #E1E3E3;
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: color 0.15s ease; }
+      #wrap .main-box .arrow-left-box:hover, #wrap .main-box .arrow-left-box:active,
+      #wrap .main-box .arrow-right-box:hover,
+      #wrap .main-box .arrow-right-box:active {
+        color: #707070;
+        cursor: pointer; }
+      #wrap .main-box .arrow-left-box i,
+      #wrap .main-box .arrow-right-box i {
+        font-size: 0.75em; }
+    #wrap .main-box .arrow-left-box {
+      position: absolute;
+      bottom: 30px;
+      left: 25px; }
+    #wrap .main-box .arrow-right-box {
+      position: absolute;
+      bottom: 30px;
+      right: 25px; }
+    #wrap .main-box .image-box {
+      width: 100%;
+      position: absolute;
+      height: 100%;
+      overflow: hidden; }
+      #wrap .main-box .image-box .bg {
+        position: absolute;
+        top: 45%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.25s ease;
+        transition-delay: 0.25s; }
+        #wrap .main-box .image-box .bg img {
+          width: 180px;
+          height: auto;
+          margin: 0 auto 30px;
+          display: block; }
+      #wrap .main-box .image-box .bg.active {
+        opacity: 1; }
+  #wrap .bottom-box {
+    width: 440px;
+    height: 120px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 0; }
+
+/*# sourceMappingURL=base.css.map */

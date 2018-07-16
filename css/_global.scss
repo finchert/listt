@@ -1,0 +1,70 @@
+// _global.scss
+
+*{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.75rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin: 20px 0 70px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 1.125rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    line-height: 1.5em;
+    margin: 0;
+}
+
+h5 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.25em;
+    margin: 0;
+    line-height: 1;
+}
+
+.btn.btn-primary {
+    background-color: $yellow;
+    color: black;
+    font-size: 0.875rem;
+    letter-spacing: 0.25em;
+    line-height: 1;
+    padding: 10px 12px;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    margin-top: 20px;
+    &:hover, &:focus, &:active, {
+        background-color: $yellow-dark;
+    }
+    &:active, &:focus {
+        box-shadow: 0 0 0 0.2rem rgba(252,241,108,.75);
+    }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    background-color: $yellow-dark;
+    color: black;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(252,241,108,.75);
+}
+
+.v-align {
+    position: relative;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
